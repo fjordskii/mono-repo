@@ -1,11 +1,24 @@
 {
   "name": "@fjordskii/say-goodbye",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
   "main": "index.js",
+  "type": "module",
+  "repository": {
+    "url": "git+https://github.com/fjordskii/mono-repo.git",
+    "directory": "mono-repo/say-goodbye",
+    "type": "git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjordskii/mono-repo/issues"
+  },
+  "homepage": "https://github.com/fjordskii/mono-repo#readme",
+  "description": ""
 }
