@@ -5,8 +5,8 @@ const toggleMachine = createMachine({
     id: 'toggle',
     initial: 'inactive',
     states: {
-        inactive: { on: { TOGGLE: 'loading' } },
-        loading: { on: { TOGGLE: 'inactive' } },
+        inactive: { on: { TOGGLE: { target: 'loading' } } },
+        loading: { on: { TOGGLE: { target: 'inactive' } } },
     },
 });
 // Machine instance with internal state
