@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "repository": {
+    "type": "git",
     "url": "https://github.com/fjordskii/mono-repo.git",
     "directory": "mono-repo/say-goodbye"
   },
