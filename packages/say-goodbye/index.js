@@ -1,3 +1,3 @@
 export function sayGoodbye() {
-    console.log('goodbye')
+    console.log('goodbye you dirty scoundrel')
 }
