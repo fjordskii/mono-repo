@@ -32,11 +32,9 @@ jobs:
           scope: '@fjordskii'
       - name: Publish Say Hello
         working-directory: ./packages/say-goodbye
-        run: npm ci
         run: npm publish
       - name: Publish Say Goodbye
         working-directory: ./packages/say-goodbye
-        run: npm ci
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
