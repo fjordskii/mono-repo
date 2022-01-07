@@ -17,6 +17,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
       - run: npm ci
-      - run: npm publish
+      - name: Publish Say Hello
+        working-directory: ./packages/say-hello
+        run: npm publish
+      - name: Publish Say Goodbye
+        working-directory: ./packages/say-goodbye
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
